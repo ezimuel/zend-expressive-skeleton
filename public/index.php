@@ -15,8 +15,8 @@ require 'vendor/autoload.php';
  */
 (function () {
     $app = require 'config/app.php';
-    
-    (require 'config/routes.php')($app, $factory, $container);
+
+    require 'config/routes.php';
 
     $app->run();
 })();
